@@ -7,8 +7,8 @@ Here's a comprehensive visual explanation of the entire system — how it works 
 
 **Diagram 1 — The pipeline** shows the full flow from raw webcam frames to a final binary verdict. The webcam feeds into face detection (landmark localisation), which feeds into three parallel analysis modules. All three converge into a CNN classifier that produces a liveness score. Anything above 0.5 grants access; below blocks it.
 
+<img width="1440" height="960" alt="image" src="https://github.com/user-attachments/assets/422fa03e-0878-41f0-afe0-b2273471599a" />
 
-<img width="1497" height="878" alt="image" src="https://github.com/user-attachments/assets/8d8ccd55-2366-41eb-b87a-9f4dba27dd22" />
 
 
 **Diagram 2 — Signal vs attack matrix** shows *why* you need multiple signals. No single signal defeats all three attack types:
