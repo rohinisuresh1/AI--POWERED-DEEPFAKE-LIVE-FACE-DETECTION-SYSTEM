@@ -6,14 +6,14 @@ Here's a comprehensive visual explanation of the entire system — how it works 
 
 
 
-The pipeline** shows the full flow from raw webcam frames to a final binary verdict. The webcam feeds into face detection (landmark localisation), which feeds into three parallel analysis modules. All three converge into a CNN classifier that produces a liveness score. Anything above 0.5 grants access; below blocks it.
+The pipeline shows the full flow from raw webcam frames to a final binary verdict. The webcam feeds into face detection (landmark localisation), which feeds into three parallel analysis modules. All three converge into a CNN classifier that produces a liveness score. Anything above 0.5 grants access; below blocks it.
 
 
 <img width="1440" height="960" alt="image" src="https://github.com/user-attachments/assets/422fa03e-0878-41f0-afe0-b2273471599a" />
 
 
 
-Signal vs attack matrix** shows *why* you need multiple signals. No single signal defeats all three attack types:
+Signal vs attack matrix shows why you need multiple signals. No single signal defeats all three attack types:
 
 - Skin texture analysis is the most universal — it catches photo, video, and mask spoofs because each leaves a distinct physical artifact (moiré patterns, screen reflections, or silicone surface with no pores).
 - Retina tracking is strong against photos and video but only partial against 3D masks, which can have motorised eyes.
