@@ -2,7 +2,8 @@
 
 Here's a comprehensive visual explanation of the entire system — how it works from input to verdict. I'll draw this as two diagrams: first the overall pipeline, then the detailed signal analysis layer.That's the full end-to-end pipeline. Now here's a closer look at exactly how each of the three signal types catches different spoofing attacks — what they measure and which attack they defeat.Here's what both diagrams explain together:
 
-<img width="1497" height="792" alt="image" src="https://github.com/user-attachments/assets/04e83e7f-e625-4490-9076-70a184bef560" />
+<img width="1440" height="1040" alt="image" src="https://github.com/user-attachments/assets/3d838b11-7c11-4de2-954f-c04d89555ad0" />
+
 
 
 **Diagram 1 — The pipeline** shows the full flow from raw webcam frames to a final binary verdict. The webcam feeds into face detection (landmark localisation), which feeds into three parallel analysis modules. All three converge into a CNN classifier that produces a liveness score. Anything above 0.5 grants access; below blocks it.
