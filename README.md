@@ -1,6 +1,6 @@
 # AI-POWERED DEEPFAKE LIVE FACE DETECTION SYSTEM
 
-Here's a comprehensive visual explanation of the entire system — how it works from input to verdict. I'll draw this as two diagrams: first the overall pipeline, then the detailed signal analysis layer.That's the full end-to-end pipeline. Now here's a closer look at exactly how each of the three signal types catches different spoofing attacks — what they measure and which attack they defeat.Here's what both diagrams explain together:
+Here's a comprehensive visual explanation of the entire system — how it works from input to verdict. I'll draw this as two diagrams: first the overall pipeline, then the detailed signal analysis layer.That's the full end-to-end pipeline. Now here's a closer look at exactly how each of the three signal types catches different spoofing attacks — what they measure and which attack they defeat.
 
 <img width="1440" height="1040" alt="image" src="https://github.com/user-attachments/assets/3d838b11-7c11-4de2-954f-c04d89555ad0" />
 
